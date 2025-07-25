@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-2xl">
           <div className="mb-4">
-            <span className="inline-block px-4 py-2 bg-primary/20 text-primary-lighter rounded-full text-sm font-medium backdrop-blur-sm">
+            <span className="inline-block px-4 py-2 bg-primary/20 text-white rounded-full text-sm font-medium backdrop-blur-sm">
               Best Mexican Food in Phoenix
             </span>
           </div>
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-text-primary text-lg px-8 py-3"
+              className="border-white text-white hover:bg-white hover:text-foreground text-lg px-8 py-3 bg-transparent"
             >
               View Menu
             </Button>
