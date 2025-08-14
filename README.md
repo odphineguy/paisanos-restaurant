@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# Paisanos Restaurant
 
-## Project info
+A modern restaurant website built with React, TypeScript, Vite, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/9aa1c03b-0a33-4066-b9b2-e2c6eaa7a44e
+## Features
 
-## How can I edit this code?
+- Responsive design
+- Modern UI with shadcn/ui components
+- React Router for navigation
+- TypeScript for type safety
+- Tailwind CSS for styling
 
-There are several ways of editing your application.
+## Development
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9aa1c03b-0a33-4066-b9b2-e2c6eaa7a44e) and start prompting.
+- Node.js (version 18 or higher)
+- npm or yarn
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/paisanos-restaurant.git
+cd paisanos-restaurant
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Building for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Preview Production Build
 
-## What technologies are used for this project?
+```bash
+npm run preview
+```
 
-This project is built with:
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is configured for GitHub Pages deployment.
 
-## How can I deploy this project?
+### Manual Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/9aa1c03b-0a33-4066-b9b2-e2c6eaa7a44e) and click on Share -> Publish.
+1. Build the project:
+```bash
+npm run build
+```
 
-## Can I connect a custom domain to my Lovable project?
+2. Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
 
-Yes, you can!
+### Automatic Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically deploys to GitHub Pages when you push to the main branch.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Header.tsx      # Site header
+│   ├── HeroSection.tsx # Hero section
+│   ├── Footer.tsx      # Site footer
+│   └── ...
+├── pages/              # Page components
+│   ├── Index.tsx       # Home page
+│   └── NotFound.tsx    # 404 page
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── assets/             # Static assets
+├── App.tsx             # Main app component
+└── main.tsx            # App entry point
+```
+
+## Technologies Used
+
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - UI component library
+- **React Router** - Client-side routing
+- **React Query** - Data fetching and caching
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
