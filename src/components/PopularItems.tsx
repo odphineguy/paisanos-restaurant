@@ -2,47 +2,49 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const PopularItems = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   const popularItems = [
     {
       id: 1,
       name: "TACOS DE CARNE ASADA (Order Of 3)",
       description: "Order of 3 - carne asada topped with onion, cilantro and guacamole. Served with a side of beans",
-      image: "/tacos.png",
+      image: `${baseUrl}tacos.png`,
       price: "$14.99"
     },
     {
       id: 2,
       name: "TACOS DE BIRRIA (Order Of 3)",
       description: "Order for 3 - Slow-cooked beef stew with spices, served with onion and cilantro. Served with a side of consomé",
-      image: "/birria.png",
+      image: `${baseUrl}birria.png`,
       price: "$16.99"
     },
     {
       id: 3,
       name: "BURRITO SUPREMO",
       description: "Large flour tortilla filled with your choice of meat, rice, beans, cheese, lettuce, and sour cream",
-      image: "/burrito.png",
+      image: `${baseUrl}burrito.png`,
       price: "$12.99"
     },
     {
       id: 4,
       name: "QUESADILLA GRANDE",
       description: "Large grilled tortilla with melted cheese and your choice of filling. Served with salsa and sour cream",
-      image: "/quesadilla.png",
+      image: `${baseUrl}quesadilla.png`,
       price: "$11.99"
     },
     {
       id: 5,
       name: "ENCHILADAS VERDES",
       description: "Three enchiladas topped with green sauce, cheese, and sour cream. Served with rice and beans",
-      image: "/enchiladas-verdes.png",
+      image: `${baseUrl}enchiladas-verdes.png`,
       price: "$13.99"
     },
     {
       id: 6,
       name: "POZOLE ROJO",
       description: "Traditional Mexican soup with hominy and pork in a red chili broth. Served with lime and oregano",
-      image: "/pozole.png",
+      image: `${baseUrl}pozole.png`,
       price: "$15.99"
     }
   ];

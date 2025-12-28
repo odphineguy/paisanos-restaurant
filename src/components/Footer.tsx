@@ -1,4 +1,6 @@
 const Footer = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <footer className="bg-text-primary text-primary-lighter py-12">
       <div className="container mx-auto px-4">
@@ -7,7 +9,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img
-                src="/paisanos.png"
+                src={`${baseUrl}paisanos.png`}
                 alt="Paisano's Logo"
                 className="w-[60px] h-[60px] rounded-full object-cover"
               />

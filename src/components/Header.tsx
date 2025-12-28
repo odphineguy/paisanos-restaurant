@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const baseUrl = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +28,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <img
-                src="/paisanos.png"
+                src={`${baseUrl}paisanos.png`}
                 alt="Paisano's Logo"
                 className={`rounded-full object-cover transition-all duration-300 ${isScrolled ? "w-12 h-12" : "w-[72px] h-[72px]"}`}
               />
