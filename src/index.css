@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Paisano's Mexican Restaurant Color Scheme */
+    --primary: 179 97% 31%; /* #019b98 */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 180 60% 59%; /* #55ccc9 */
+    --primary-lighter: 180 100% 88%; /* #c1ffff */
+
+    --accent: 345 98% 50%; /* #dd0025 */
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 15 100% 84%; /* #ffbfab */
+
+    --text-primary: 190 97% 18%; /* #014e60 */
+    --text-secondary: 195 38% 40%; /* #3f7a8d */
+
+    --background: 0 0% 98%; /* #fbfbfb */
+    --background-secondary: 0 0% 95%; /* #f1f1f1 */
+    --background-muted: 0 0% 78%; /* #c8c8c8 */
+
+    --foreground: 190 97% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 190 97% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 190 97% 18%;
+
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 190 97% 18%;
+
+    --muted: 0 0% 95%;
+    --muted-foreground: 195 38% 40%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 179 97% 31%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --primary: 179 97% 31%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 180 60% 59%;
+    --primary-lighter: 180 100% 88%;
+
+    --accent: 345 98% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 15 100% 84%;
+
+    --text-primary: 180 100% 88%;
+    --text-secondary: 195 38% 70%;
+
+    --background: 190 97% 8%;
+    --background-secondary: 190 97% 12%;
+    --background-muted: 190 50% 20%;
+
+    --foreground: 180 100% 88%;
+    --card: 190 97% 10%;
+    --card-foreground: 180 100% 88%;
+    --popover: 190 97% 10%;
+    --popover-foreground: 180 100% 88%;
+
+    --secondary: 190 97% 12%;
+    --secondary-foreground: 180 100% 88%;
+
+    --muted: 190 97% 12%;
+    --muted-foreground: 195 38% 70%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 190 50% 20%;
+    --input: 190 50% 20%;
+    --ring: 179 97% 31%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
